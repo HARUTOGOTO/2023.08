@@ -8,17 +8,17 @@
     </head>
     <body>
         <h1>Blog name</h1>
-        <form action="post" method="POST">
+        <form action="/posts" method="POST">
             @csrf
             <div classs="title">
-                <h2>title</h2>
-                <input type="text" nemr=post[title] placeholder="タイトル">
+                <h2>Title</h2>
+                <input type="text" name="post[title]" placeholder="タイトル">
             </div>
             <div class="body">
                 <h2>Body</h2>
                 <textarea name="post[body]" placeholder="今日も一日お疲れ様でした。"></textarea>
             </div>
-            <input type="submit" value="store">
+            <input type="submit" value="store"/>
         </form>
         <div class='footer'>
             <a href="/">戻る</a>
