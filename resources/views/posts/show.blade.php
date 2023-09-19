@@ -16,8 +16,11 @@
                 <p class='body'>{{$post->body}}</p>
             </div>
         </div>
+        <div class='edit'>
+            <a href='/posts/{{$post->id}}/edit'>EDIT</a>
+        </div>
         <div class='footer'>
-            <a href='/'>戻る</a>
+            <a href='/'>BACK</a>
         </div>
     </body>
 </html>
